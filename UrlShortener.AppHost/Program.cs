@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var apiService = builder.AddProject<Projects.UrlShortener>("urlshortener");
+var apiService = builder.AddProject<Projects.UrlShortenerAPI>("urlshortener");
 
 apiService.WithCommand(
         "swagger-ui-docs",

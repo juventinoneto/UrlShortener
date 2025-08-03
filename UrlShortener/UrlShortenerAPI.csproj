@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UrlShortener-AppServices\UrlShortenerAppServices.csproj" />
     <ProjectReference Include="..\UrlShortener.ServiceDefaults\UrlShortener.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\UrlShortenerDI\UrlShortenerDI.csproj" />
   </ItemGroup>
 
 </Project>
